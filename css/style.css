@@ -1,0 +1,958 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F8FF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 50px;
+    color: #30E8A8;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+a {
+    font-size: 12px;
+}
+
+
+
+
+/* ------ NAVBAR ------- */
+
+
+
+#logo_header {
+    float: left;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.menu {
+    min-width: 60%;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-inline-start: 0px;
+    z-index: 1;
+}
+
+.menu ul {
+    padding-inline-start: 0px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 1%;
+}
+
+.menu li :hover {
+    color: #12AD5C;
+}
+
+.menu li a {
+    color: #262522;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* ------ FORSIDE ------- */
+
+
+/* ------ HEADER ------- */
+
+header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    color: white;
+    z-index: -10;
+
+}
+
+.container img {
+    width: 100%;
+    display: block;
+    z-index: -15;
+}
+
+.container .tablet-op {
+    display: none;
+}
+
+.container .computer {
+    display: none;
+}
+
+.header-text {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 30px;
+
+}
+
+.header-text-info {
+    font-size: 13px;
+}
+
+.header-text h1 {
+    text-shadow: 1px 1px black;
+}
+
+.header-text a {
+    background-color: #30E8A8;
+    padding: 10px;
+    border-radius: 75px;
+    border: none;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* ------ Forside Historie------- */
+
+
+.historie-text {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+.historie-text h2 {
+    text-align: left;
+}
+
+.historie-text p {
+    margin-top: 10px;
+    width: 90%;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.historie-text a {
+    background-color: #555555;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+
+/* ------ Forside produkter----- */
+
+.produkt-overskrift {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.forside-produkter {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.forside-produkter div {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.forside-produkter div h3 {
+    padding-top: 10px;
+}
+
+.forside-produkter p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-information {
+    text-decoration: none;
+    color: white;
+    background-color: #12AD5C;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ------ Youtube video----- */
+
+.youtube-heading {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------ PRODUKTER ------- */
+
+.computer-show {
+    display: none;
+}
+
+.produkter-header img {
+    width: 100%;
+}
+
+.produktserie {
+    text-align: center;
+
+}
+
+.product-text h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.section-product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.section-product div {
+    width: 100%;
+
+}
+
+.section-product div img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.section-product p,
+.section-product h2 {
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: auto;
+
+}
+
+/* ------ DUFTE----- */
+
+.dufte-header-text p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.fruit {
+    opacity: 0.15;
+    position: absolute;
+    width: 60%;
+}
+
+.produkter-header .tablet-op {
+    display: none;
+}
+
+.dufte-headline {
+    text-align: center;
+}
+
+.produkter {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-product div img {
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.single-product div h3,
+.single-product div p {
+    text-align: center;
+    padding-top: 15px;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* ------ OM OS----- */
+
+.om-text {
+    width: 80%;
+    margin: auto;
+}
+
+.om-text h2,
+.om-text p {
+    text-align: center;
+}
+
+.om-text .om {
+    padding-bottom: 30px;
+}
+
+.invisi-kvalitet {
+    width: 100%;
+    padding: 10% 5%;
+}
+
+
+
+
+/* ------ HISTORIE----- */
+
+.history-text {
+    width: 80%;
+    margin: auto;
+}
+
+.history-headline {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.history-text p {
+    text-align: center;
+}
+
+.skandinavien {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/* ------ KONTAKT----- */
+
+
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+.row .column h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.column {
+    margin: 20px 0px;
+}
+
+.column form input {
+    padding: 5px 75px;
+    margin: 10px 0px;
+}
+
+.send {
+    background-color: #30E8A8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+
+/* ------ Footer----- */
+
+hr {
+    border-top: 1px black solid;
+    width: 100%;
+    margin: 100px auto 50px auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer section {
+    height: 170px;
+}
+
+footer section h2 {
+    padding-bottom: 15px;
+}
+
+footer section a img {
+    width: 15%;
+}
+
+
+
+footer a {
+    color: #30E8A8;
+}
+
+
+
+
+
+.gran {
+    position: absolute;
+    width: 100%;
+    margin-top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------ MEDIA QUERIES ------- */
+
+/*mobile*/
+@media (max-width: 480px) {
+    #logo_header {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+        margin-bottom: -30px;
+    }
+
+
+}
+
+/*Burger menu*/
+@media (max-width: 1024px) {
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        margin-top: 18px;
+        background: white;
+    }
+
+    .menu li {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .menu li :hover {
+        background: #F9FFFF;
+        @keyframes transition-duration(.5s);
+    }
+
+    .menu li a {
+        display: table;
+        width: 100%;
+        color: #262522;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px;
+        overflow: hidden;
+        border-bottom: thin solid #555;
+    }
+
+    .burger {
+        display: block;
+        background: transparent;
+        margin: 10px 10px auto auto;
+        outline: none;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+
+}
+
+
+/*tablet*/
+@media (min-width: 768px) {
+
+
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    #logo_header {
+        width: 30%;
+    }
+
+
+
+
+    /*forside*/
+
+    .container .mobile {
+        display: none;
+    }
+
+    .container .tablet-op {
+        display: inherit;
+    }
+
+    .header-text h1 {
+        margin-bottom: -30px;
+    }
+
+
+    .historie-text {
+        padding-top: 50px;
+        width: 80%;
+    }
+
+    .h2-overskrift {
+        margin-top: 70px;
+    }
+
+    .forside-produkter {
+        display: flex;
+        margin-top: 0px;
+        padding: 3%
+    }
+
+    .forside-produkter div {
+        padding: 10px;
+    }
+
+    .forside-produkter div img {
+        width: 70%;
+    }
+
+    p {
+        font-size:
+    }
+
+
+
+    /*Produkter*/
+
+    .produktserie {
+        margin-top: -80px;
+    }
+
+
+    .section-product {
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: auto;
+        margin-top: 150px
+    }
+
+
+    .section-product p,
+    .section-product h2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .product-text h1 {
+        text-align: left;
+        padding-bottom: 15px;
+    }
+
+    .more-information {
+        width: 20%;
+    }
+
+
+
+
+
+    /* Dufte */
+
+    .fruit {
+        width: 40%;
+    }
+
+    .produkter {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .produkter .single-product {
+        width: 25%;
+    }
+
+
+    .produkter .single-product img {
+        margin-top: 50px;
+    }
+
+    .dufte-header-text {
+        margin-bottom: 70px;
+    }
+
+
+
+    /* Om os */
+
+    .om-text {
+        padding: 30px 0;
+    }
+
+    .margin {
+        margin-top: -100px;
+
+    }
+
+    .om-text h2,
+    .om-text p {
+        text-align: left;
+    }
+
+
+
+
+    .nomobile {
+        display: none;
+    }
+
+
+
+    /* Historie */
+
+    .history-text p {
+        text-align: left;
+    }
+
+    .history-text .history-headline {
+        text-align: left;
+    }
+
+    .history-text div {
+        width: 45%;
+        padding: 3%;
+        display: inline-block;
+    }
+
+
+    /* Kontakt */
+
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .row .column .kontakt-os {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    .column form input {
+        padding: 2% 30%;
+    }
+
+    .column form p {
+        font-size: 16px;
+    }
+
+
+
+    /* footer */
+
+    hr {
+        border-top: 1px black solid;
+        width: 80%;
+        margin: 100px auto 50px auto;
+    }
+
+    footer {
+        flex-direction: row;
+        width: inherit;
+        text-align: left;
+        width: 80%;
+        height: 230px;
+    }
+
+    footer section {
+        width: 25%;
+        margin: 0 30px;
+
+    }
+
+    footer section p {
+        text-align: left;
+    }
+
+    footer section h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    footer section a img {
+        width: 40%;
+    }
+
+    .footer-padding {
+        padding-right: 80px;
+    }
+
+
+    .gran {
+        margin-top: -150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*laptop*/
+@media (min-width: 1024px) {
+    /*Forside*/
+
+    .burger {
+        display: none;
+    }
+
+    .mobil {
+        display: none;
+    }
+
+
+    #logo_header {
+        width: 20%;
+    }
+
+    .menu {
+        margin-right: 30px;
+    }
+
+    .menu li a {
+        font-size: 13px;
+    }
+
+    .container .tablet-op {
+        display: none;
+    }
+
+    .container .computer {
+        display: block;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        font-size: 40px;
+        font-weight: 300;
+        padding-bottom: 30px;
+    }
+
+    .header-text h1 {
+        margin-bottom: -80px;
+    }
+
+    .header-text-info {
+        font-size: 14px;
+    }
+
+    .header-text span {
+        color: #30E8A8;
+        font-weight: 700;
+        text-shadow: 1px 2px black;
+    }
+
+    .dufte-btn button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+
+
+
+    .historie-text {
+        position: absolute;
+        top: 50%;
+        left: 7%;
+    }
+
+    .historie-text h2 {
+        text-align: left;
+    }
+
+    .historie-text p {
+        margin-top: 10px;
+        width: 50%;
+        line-height: 2;
+    }
+
+    .historie-text button {
+        background-color: #555555;
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        margin-top: 30px;
+        font-size: 12px;
+
+    }
+
+
+    .youtube-heading {
+        
+    }
+
+    .iframe-container {
+        position: relative;
+        width: 60%;
+        display: block;
+        margin: auto;
+
+    }
+
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+    /*Produkter*/
+
+    .computer-dontshow {
+        display: none;
+    }
+
+    .computer-show {
+        display: block;
+    }
+
+    /*Dufte*/
+
+
+
+    .produkter-header .tablet-op {
+        display: block;
+
+    }
+
+    .produkter-header .mobile {
+        display: none;
+    }
+
+    .dufte-headline {
+        margin-top: -100px;
+    }
+
+
+    /*Om os*/
+
+    .produkter-header .mobile {
+        display: none;
+    }
+
+    /*footer*/
+
+    hr {
+        margin: 100px auto 50px auto;
+    }
+
+    footer section a img {
+        width: 20%;
+    }
+
+    .gran {
+        margin-top: -250px;
+    }
+
+
+
+}
