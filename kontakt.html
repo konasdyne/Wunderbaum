@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>WunderBaum</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="wunderbaum logo" id="logo_header"></a>
+
+        <nav>
+            <a href="#" class="burger">
+                <img src="images/menu.png" alt="burger menu">
+            </a>
+            <ul class="menu">
+                <li><a href="produkter.html">PRODUKTER</a>
+                </li>
+                <li><a href="dufte.html">DUFTE</a>
+                </li>
+                <li><a href="omos.html">OM OS</a>
+                </li>
+                <li><a href="historie.html">HISTORIE</a>
+                </li>
+                <li><a href="kontakt.html">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="produkter-header">
+        <img class="mobile" src="images/contact-img-mobile.jpg" alt="wunderbaum i køkkenet">
+        <img class="tablet-op" src="images/contact-img-computer.jpg" alt="wunderbaum i køkkenet">
+    </section>
+
+
+
+    <div class="row">
+        <div class="column">
+            <h2>Kontakt os</h2>
+            <p class="kontakt-os">Du er velkommen til at kontakte os. Vi vil gerne høre, hvad du har at sige, kommentarer eller måske har du en god ide. Vi svarer hurtigst muligt på din email.
+
+
+            </p>
+        </div>
+        <div class="column">
+            <form>
+                <p>Dit navn</p>
+                <input type="text" name="navn"><br>
+                <p>E-mail</p>
+                <input type="text" name="email"><br>
+                <p>Emne</p>
+                <input type="text" name="email"><br>
+                <p>Besked</p>
+                <input type="text" name="email"><br>
+
+                <button class="send">SEND</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+<hr>
+
+    <footer>
+        <section>
+            <h2>WunderBaum</h2>
+            <p>Vi hos WUNDER-BAUM ® brænder for vores dufte og alle de andre produkter, vi producerer. Vi forsøger konstant at udvikle vores sortiment af nye dufte og spændende produkter.</p>
+        </section>
+
+        <section>
+            <h2>Produkter</h2>
+            <a href="produkter.html"
+            >Produkter</a> <br> <br>
+            <a href="dufte.html">Dufte</a>
+        </section>
+
+        <section>
+            <h2>Om os</h2>
+            <a href="omos.html">Om os</a> <br> <br>
+            <a href="historie.html">Historie</a>
+        </section>
+        
+        <section>
+            <a href="https://www.facebook.com/wunderbaum.de/" ><img class="so-me" src="images/facebook-logo.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/wunderbaum.de/?hl=da"><img class="so-me" src="images/instagram-logo.svg" alt="facebook"></a>
+        </section>
+
+
+    </footer>
+
+<img class="gran" src="images/gran.png" alt="">
+
+
+    <script>
+        $(".burger").click(function() {
+            $(this).toggleClass('active');
+            $("ul.menu li").slideToggle('fast');
+        })
+
+        $(window).resize(function() {
+            if ($(window).width() > 650) {
+                $('ul.menu li').removeAttr('style');
+            }
+        })
+    </script>
+</body>
+
+</html>

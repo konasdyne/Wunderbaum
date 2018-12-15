@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>WunderBaum</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="wunderbaum logo" id="logo_header"></a>
+
+        <nav>
+            <a href="#" class="burger">
+                <img src="images/menu.png" alt="burger menu">
+            </a>
+            <ul class="menu">
+                <li><a href="produkter.html">PRODUKTER</a>
+                </li>
+                <li><a href="dufte.html">DUFTE</a>
+                </li>
+                <li><a href="omos.html">OM OS</a>
+                </li>
+                <li><a href="historie.html">HISTORIE</a>
+                </li>
+                <li><a href="kontakt.html">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="container">
+
+        <img class="mobile" src="images/forside-img1.jpg" alt="skov">
+
+        <img class="tablet-op" src="images/forside-img.jpg" alt="skov">
+
+        <img class="computer" src="images/forside-img2.jpg" alt="skov">
+
+
+        <section class="header-text">
+            <p class="header-text-info">OVERLEGEN KVALITET SIDEN 1952</p>
+            <h1>WunderBaum</h1><br><br>
+            <a class="dufte-btn" href="dufte.html"><strong>Over 60 forskellige dufte</strong></a>
+        </section>
+
+        <section class="historie-text">
+            <h2>Historien bag WunderBaum</h2>
+            <p>Det var 1952 i Watertown, New York, USA. En mælkebilchauffør havde haft nok af duften af spildt mælk og nævnte problemet for sin ven, Julius "Jules" Sämann. Jules havde brugt de sidste 4 måneder i den canadiske fyrreskov, hvor han undersøgte og studerede de aromatiske olier, der giver dufttræerne sin rolige, karakteristiske duft.
+            </p>
+            <a href="historie.html">FORTÆLLINGEN BAG</a>
+        </section>
+
+    </article>
+
+    <h2 class="produkt-overskrift">Vores produktserie</h2>
+
+    <article class="forside-produkter">
+
+        <div>
+            <img src="images/wunderbaum-ikon.png" alt="ikon">
+            <h3>DUFTTRÆ</h3>
+            <p>Vores duftende grantræ er tilgængelige i mange forskellige dufte. Har du fundet din favorit?
+            </p>
+        </div>
+        <div>
+            <img src="images/flaske-ikon.png" alt="ikon">
+            <h3>FLASKE</h3>
+            <p>WUNDER-BAUMS velkendte dufte i en elegant pakke, der passer både i bilen og i hjemmet.
+
+
+            </p>
+        </div>
+        <div>
+            <img src="images/clip-ikon.png" alt="ikon">
+            <h3>CLIP</h3>
+            <p>Takket være sin unikke form kan du anvende denne CLIP på mange forskellige steder i din bil. Diskret og alsidig.
+            </p>
+        </div>
+        <div>
+            <img src="images/invisi-ikon.png" alt="ikon">
+            <h3>INVISI</h3>
+            <p>INVISI er vores nyeste opfindelse og den er næsten usynlig. Det er den mest diskrete måde at sprede duft i din bil.
+            </p>
+        </div>
+        <div>
+            <img src="images/treehouse-ikon.png" alt="ikon">
+            <h3>TRÆHUS</h3>
+            <p> Dette produkt giver dit yndlings dufttræ et nyt hjem. Træhuset giver dig muligheden for at placere den mange nye steder i hjemmet.
+
+
+            </p>
+        </div>
+
+
+
+    </article>
+
+    <a class="more-information" href="produkter.html">Mere information</a>
+
+    <h2 class="youtube-heading">Hvor det passer dig bedst</h2>
+
+    <section class="iframe-container">
+
+
+        <iframe src="https://www.youtube.com/embed/TUKAvpMDYXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <section>
+            <h2 class="footer-padding">WunderBaum</h2>
+            <p>Vi hos WUNDER-BAUM ® brænder for vores dufte og alle de andre produkter, vi producerer. Vi forsøger konstant at udvikle vores sortiment af nye dufte og spændende produkter.</p>
+        </section>
+
+        <section>
+            <h2>Produkter</h2>
+            <a href="produkter.html">Produkter</a> <br> <br>
+            <a href="dufte.html">Dufte</a>
+        </section>
+
+        <section>
+            <h2>Om os</h2>
+            <a href="omos.html">Om os</a> <br> <br>
+            <a href="historie.html">Historie</a>
+        </section>
+
+        <section>
+            <a href="https://www.facebook.com/wunderbaum.de/"><img class="so-me" src="images/facebook-logo.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/wunderbaum.de/?hl=da"><img class="so-me" src="images/instagram-logo.svg" alt="facebook"></a>
+        </section>
+
+    </footer>
+
+
+
+    <script>
+        $(".burger").click(function() {
+            $(this).toggleClass('active');
+            $("ul.menu li").slideToggle('fast');
+        })
+
+        $(window).resize(function() {
+            if ($(window).width() > 650) {
+                $('ul.menu li').removeAttr('style');
+            }
+        })
+    </script>
+    
+    
+</body>
+
+</html>

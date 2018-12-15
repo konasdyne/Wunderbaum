@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>WunderBaum</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="wunderbaum logo" id="logo_header"></a>
+        <nav>
+            <a href="#" class="burger">
+                <img src="images/menu.png" alt="burger menu">
+            </a>
+            <ul class="menu">
+                <li><a href="produkter.html">PRODUKTER</a>
+                </li>
+                <li><a href="dufte.html">DUFTE</a>
+                </li>
+                <li><a href="omos.html">OM OS</a>
+                </li>
+                <li><a href="historie.html">HISTORIE</a>
+                </li>
+                <li><a href="kontakt.html">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="produkter-header">
+        <img class="computer-dontshow" src="images/produkter-img-mobile.jpg" alt="wunderbaum produkt">
+        <img class="computer-show" src="images/produkter-img2.jpg" alt="wunderbaum produkt">
+    </section>
+
+    <h2 class="produktserie">Vores produktserie</h2>
+
+
+    <section class="section-product">
+
+        <div>
+            <img src="images/wunderbaum-product.png" alt="produkt">
+        </div>
+
+        <div class="product-text">
+            <h1>DUFTTRÆ</h1>
+            <p>Det lille grøntræ, kan fremskabe den ønskede duft indefor sekunder. Åben posen lidt, og hæng den, hvor det passer dig bedst. Nyd den forfriskende duft. </p>
+        </div>
+
+    </section>
+
+    <section class="section-product">
+
+        <div>
+            <img src="images/invisi-product.png" alt="produkt">
+        </div>
+
+        <div class="product-text">
+            <h1>INVISI</h1>
+            <p>INVISI er næsten usynlige, og er en ny måde at opfriske bilen med en dejlig duft. Den blokerer ikke luftstrømmen og passer til de fleste biler. Med vores unikke StediScent teknologi får du en langvarig duft i din bil</p>
+        </div>
+
+    </section>
+
+    <section class="section-product">
+
+        <div>
+            <img src="images/clip-product.png" alt="produkt">
+        </div>
+
+        <div class="product-text">
+            <h1>CLIP</h1>
+            <p>Clip er en ny og alsidig måde at give din bil en smuk duft. Med Clips unikke design kan den anvendes mange forskellige steder og fås i fire forskellige dufter: Ny bil, Vanille, Tropisk og Sport. Prøv duften hos din forhandler.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="section-product">
+
+        <div>
+            <img src="images/flaske-product.png" alt="produkt">
+        </div>
+
+        <div class="product-text">
+            <h1>FLASKE</h1>
+            <p>Vores nye duftflaske fungerer som en væge til effektiv spredning af dufte. Flere kvalitative dufter, alle moderne, rene og friske.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="section-product">
+
+        <div>
+            <img src="images/tr%C3%A6hus.png" alt="produkt">
+        </div>
+
+        <div class="product-text">
+            <h1>TRÆHUS</h1>
+            <p> Dette produkt giver dit yndlings træ et nyt hjem. Træhuset er en holder til alle dufttræ og giver dig muligheden for at placere den mange nye steder. Sæt husholderen i låget på kassen, på væggen i garderobeskabet eller på bilens dør. Det er bare din fantasi, der sætter grænserne. Lad din yndlings duft nå nye områder! </p>
+        </div>
+
+    </section>
+
+
+
+    <hr>
+
+    <footer>
+        <section>
+            <h2>WunderBaum</h2>
+            <p>Vi hos WUNDER-BAUM ® brænder for vores dufte og alle de andre produkter, vi producerer. Vi forsøger konstant at udvikle vores sortiment af nye dufte og spændende produkter.</p>
+        </section>
+
+        <section>
+            <h2>Produkter</h2>
+            <a href="produkter.html">Produkter</a> <br> <br>
+            <a href="dufte.html">Dufte</a>
+        </section>
+
+        <section>
+            <h2>Om os</h2>
+            <a href="omos.html">Om os</a> <br> <br>
+            <a href="historie.html">Historie</a>
+        </section>
+
+        <section>
+            <a href="https://www.facebook.com/wunderbaum.de/"><img class="so-me" src="images/facebook-logo.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/wunderbaum.de/?hl=da"><img class="so-me" src="images/instagram-logo.svg" alt="facebook"></a>
+        </section>
+
+    </footer>
+
+    <img class="gran" src="images/gran.png" alt="">
+
+
+    <script>
+        $(".burger").click(function() {
+            $(this).toggleClass('active');
+            $("ul.menu li").slideToggle('fast');
+        })
+
+        $(window).resize(function() {
+            if ($(window).width() > 650) {
+                $('ul.menu li').removeAttr('style');
+            }
+        })
+    </script>
+</body>
+
+</html>

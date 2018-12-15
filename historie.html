@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>WunderBaum</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="wunderbaum logo" id="logo_header"></a>
+
+        <nav>
+            <a href="#" class="burger">
+                <img src="images/menu.png" alt="burger menu">
+            </a>
+            <ul class="menu">
+                <li><a href="produkter.html">PRODUKTER</a>
+                </li>
+                <li><a href="dufte.html">DUFTE</a>
+                </li>
+                <li><a href="omos.html">OM OS</a>
+                </li>
+                <li><a href="historie.html">HISTORIE</a>
+                </li>
+                <li><a href="kontakt.html">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="produkter-header">
+        <img class="mobile" src="images/historie-img-mobile.jpg" alt="skov">
+        <img class="tablet-op" src="images/img.jpg" alt="skov">
+    </section>
+
+    <article class="history-text">
+        <h2 class="history-headline">Historien bag WunderBaum</h2>
+        <p>
+
+            Det var 1952 i Watertown, New York, USA. En mælkebilchauffør havde haft nok af duften af spildt mælk i hans førehus og nævnte problemet for sin ven, Julius "Jules" Sämann. Jules havde brugt de sidste 4 måneder i den canadiske fyrreskov, hvor han undersøgte og studerede de aromatiske olier, som giver de dufttræerne sin rolige og karakteristiske duft. En gang på arbejde forsøgte han at tilføje de dejlige dufte til et specielt materiale, og sådan blev den første WunderBaum produceret.
+
+        </p>
+
+        <h2 class="skandinavien history-headline">WUNDER-BAUM® i Skandinavien</h2>
+        
+            <p>Den 5. juli 1961 blev Far Yngve Niklasson registreret, som var engageret i import- og engroshandel. I 1962 indførte han den første duft af fyrretræerne i CAR-freshner. De første dufttræer i Skandinavien sælges af Yngve far, på Caltex tankstation lige uden for Phuket, Sverige, i begyndelsen af 60'erne. <br>
+
+            I august 1965 indgik Yngve og Julius Sämann et samarbejde, hvilket betød, at Yngve modtog licensproduktion af Sverige, Norge, Danmark og Finland. <br>
+
+            I 1974 blev en ny fabrik bygget i Prästängens industriområde i Strömstad. I 1986 blev det udvidet, hvilket resulterede i, at anlægget blev mere effektivt. Virksomheden er et familie selskab og drives af Niklassons anden generation. Grundlæggeren af Skandinavien WunderBaum, Yngve Niklasson begyndte at aftage i slutningen af 90'erne og afleveret ansvaret til sin søn Daniel Niklasson og to døtre, Jeanette & Carina Niklasson i årsskiftet 2001/2002.</p>
+        
+        
+    
+
+        
+
+    </article>
+
+
+
+<hr>
+
+    <footer>
+        <section>
+            <h2>WunderBaum</h2>
+            <p>Vi hos WUNDER-BAUM ® brænder for vores dufte og alle de andre produkter, vi producerer. Vi forsøger konstant at udvikle vores sortiment af nye dufte og spændende produkter.</p>
+        </section>
+
+        <section>
+            <h2>Produkter</h2>
+            <a href="produkter.html"
+            >Produkter</a> <br> <br>
+            <a href="dufte.html">Dufte</a>
+        </section>
+
+        <section>
+            <h2>Om os</h2>
+            <a href="omos.html">Om os</a> <br> <br>
+            <a href="historie.html">Historie</a>
+        </section>
+        
+        <section>
+            <a href="https://www.facebook.com/wunderbaum.de/" ><img class="so-me" src="images/facebook-logo.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/wunderbaum.de/?hl=da"><img class="so-me" src="images/instagram-logo.svg" alt="facebook"></a>
+        </section>
+
+
+    </footer>
+
+
+<img class="gran" src="images/gran.png" alt="">
+
+
+
+    <script>
+        $(".burger").click(function() {
+            $(this).toggleClass('active');
+            $("ul.menu li").slideToggle('fast');
+        })
+
+        $(window).resize(function() {
+            if ($(window).width() > 650) {
+                $('ul.menu li').removeAttr('style');
+            }
+        })
+    </script>
+</body>
+
+</html>
